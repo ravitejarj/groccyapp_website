@@ -1,0 +1,10 @@
+.footer-wrapper {
+  width: 100%;
+  background: linear-gradient(to right, #cc5500 0%, #ff7f50 50%, #ffb347 100%);
+}
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 1.5rem 1rem 2.5rem;
+}

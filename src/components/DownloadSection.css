@@ -1,0 +1,32 @@
+.download-section {
+  position: absolute;
+  bottom: 40px;
+  left: 4rem; /* align with hero text */
+  color: white;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif; /* ✅ add font here */
+}
+
+.download-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif; /* ✅ apply to label */
+  margin-left: 6px;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.store-buttons img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}

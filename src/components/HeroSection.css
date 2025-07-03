@@ -1,0 +1,85 @@
+.text-section {
+  position: relative;
+  color: white;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  max-width: 520px;
+  margin-left: 1rem; /* aligns with .hero-left padding */
+}
+
+
+.badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-family: 'Roboto', sans-serif;
+  transform: translateX(-16px);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700; /* instead of 900 or 800 */
+  line-height: 1.2; /* ✅ smoother vertical spacing */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;          /* smooth Roboto look */
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif; /* ✅ ensure it's Roboto */
+}
+
+.hover-bounce:hover {
+  animation: bounceText 0.6s ease;
+}
+
+@keyframes bounceText {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.1) rotate(1deg); }
+  60%  { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1); }
+}
+
+.hover-fade {
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.hover-fade:hover {
+  transform: translateY(-4px) scale(1.02);
+  color: #ffffff;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.3);
+}
+.hero-left {
+  padding: 4rem 3rem 6rem 4rem; /* Add consistent left padding */
+}
+.small-title {
+  font-size: 2rem;
+}
+
+.small-subtitle {
+  font-size: 1.2rem;
+}
+
+.veg-cover {
+  animation: float3D 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes float3D {
+  0% {
+    transform: translateY(0px) rotateZ(0deg) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotateZ(1.5deg) rotateX(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotateZ(0deg) rotateX(0deg);
+  }
+}
